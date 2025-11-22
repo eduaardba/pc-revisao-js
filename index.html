@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUDA work</title>
+</head>
+<body>
+    <h1>Manipulação de evento</h1>
+    <div id="box" style="width: 150px;height: 150px;background-color: aqua;"></div>
+    <script>
+        let isApproved = true
+
+        let element = document.getElementById("box")
+        if(isApproved) {
+        }
+
+        element.addEventListener("mouseover", () => {
+            element.style.backgroundColor = "red"
+            alert("mouse detectado")
+        })
+
+        element.addEventListener("mouseout", () => {
+            element.style.backgroundColor = "aqua"
+
+        })
+
+    </script>
+</body>
+</html>
